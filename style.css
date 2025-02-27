@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+  
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cabecario {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    font-size: 20px;
+    width: ;
+}
+
+#vjc {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#corpo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+#calculadora {
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 90%;
+}
+
+#espacoBotoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.botao {
+    font-size: 24px;
+    border-radius: 10px;
+    height: 60px;
+    width: 100%;
+    color: white;
+    border: none;
+}
+
+.deleta {
+    background-color: rgb(200, 50, 50);
+}
+
+.opera {
+    background-color: rgb(255, 146, 3);
+}
+
+.num {
+    background-color: rgb(82, 82, 82);
+}
+
+.igual {
+    background-color: rgb(61, 214, 61);
+    grid-column: span 2;
+}
+
+.botao:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.botao:active {
+    transform: scale(0.95);
+}
